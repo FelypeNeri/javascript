@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body {
+            background-color: rgb(158, 217, 217);
+            color: white; /* Comentário em CSS*/
+            font: normal 1.3em arial;
+        }
+
+        h1 {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!-- Comentário em HTML -->
+    <p>Já me livrei da maldição</p>
+    <script>        
+        var n1 = Number(window.prompt('Digite um numero: '))
+        var n2 = Number(window.prompt('Digite outro numero: '))
+        var s = n1 + n2
+        window.alert(`A soma dos valores ${n1} e ${n2} é ${s}`)
+    </script>
+</body>
+</html>
+
+<!--
+    Conversão de String para Number
+    Number.parseInt(n)
+    Number.parseFloat(n)
+    Number(n)
+    
+    Conversão de Number para String
+    String(s)
+    s.toString()
+
+    Formatando Strings
+    var s = 'JavaScript'
+    'Eu estou aprendendo s' - Não faz interpolação
+    'Eu estou aprendendo' + s - Não faz Concatenação
+    `Eu estou aprendendo ${s}` Usa template string  
+
+    s.length - quantos caracteres tem na String
+    s.toUpperCase - tudo para letras "MAIUSCULAS"
+    s.LowCase - tudo para letras "Minúsculas"
+
+    Formatação de numero
+    n1.toFixed(2) - Usado para definir quantas casas decimais vão ser exibidas.
+    n1.replace('.' ,',') - função usada para trocar o ponto por virgula.
+    n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) - utilizado para localizar a formatação do valor monetario!
+-->
